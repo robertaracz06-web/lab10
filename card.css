@@ -1,0 +1,47 @@
+
+#personal-card {
+    background-color: #ffffff;
+    width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 10px solid #3f6d4d; 
+}
+
+.nume {
+    color: #333;
+    font-size: 1.6rem;
+    margin: 15px 0 5px 0;
+}
+
+.info-student {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 5px solid #f0f0f0;
+}
+
+a {
+    color: #2a7a57;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #333;
+}

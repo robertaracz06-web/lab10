@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="universities.css"> 
+    <title>Universități din România - Lab 10</title>
+</head>
+<body>
+    <a href="#main-content">Sari la conținutul principal</a>
+
+    <header>
+        <h1>Universități din România</h1>
+        <nav aria-label="Navigație principală">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="universities.html">Universități</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="api-section">
+            <label for="q">Filtru (opțional):</label>
+            <input id="q" placeholder="caută după nume…" />
+            <button id="exportCsv" class="export-btn">Export CSV</button>
+
+            <div id="status" class="status"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nume</th>
+                        <th>Țară</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Racz Roberta. Laboratorul 10.</p>
+    </footer>
+
+   
+    <script src="universities.js"></script>
+</body>
+</html>

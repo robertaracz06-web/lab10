@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Contact - Laborator 9</title>
+</head>
+<body>
+    <a href="#main-content">Sari la conținutul principal</a>
+
+    <header>
+        <h1>Conectează-mă</h1>
+          <nav aria-label="Navigație principală">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="universities.html">Universități</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Completează formularul</h2>
+            <form id="contactForm" aria-label="Formular de contact" action="#" method="post">
+                <fieldset>
+                    <legend>Detalii personale</legend>
+
+                    <label for="fullname">Nume complet (obligatoriu):</label>
+                    <input type="text" id="fullname" name="fullname">
+
+                    <label for="email">Email (obligatoriu, @e-uvt.ro):</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Telefon (opțional, 10 cifre):</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mesajul tău</legend>
+
+                    <label for="subject">Subiect (obligatoriu):</label>
+                    <input type="text" id="subject" name="subject">
+
+                    <label for="message">Mesaj (obligatoriu):</label>
+                    <p id="mesaj-ajutor">Te rugăm să oferi cât mai multe detalii.</p>
+                    <textarea id="message" name="message" aria-describedby="mesaj-ajutor"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cum ai auzit de noi?</legend>
+                    <input type="radio" id="sursa-social" name="sursa" value="social" class="radio-sursa">
+                    <label for="sursa-social">Rețele sociale</label><br>
+
+                    <input type="radio" id="sursa-cautare" name="sursa" value="cautare" class="radio-sursa">
+                    <label for="sursa-cautare">Motor de căutare</label><br>
+
+                    <input type="radio" id="sursa-prieten" name="sursa" value="prieten" class="radio-sursa">
+                    <label for="sursa-prieten">De la un prieten</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informații Suplimentare (Lab 9)</legend>
+                    
+                    <label for="dob">Data Nașterii (minim 18 ani):</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <label for="age">Vârstă (între 18 și 60):</label>
+                    <input type="number" id="age" name="age">
+
+                    <label for="website">Website (trebuie să înceapă cu https://):</label>
+                    <input type="url" id="website" name="website">
+
+                    <label for="fileUpload">Încarcă fișier (.pdf sau .docx, max 2MB):</label>
+                    <input type="file" id="fileUpload" name="fileUpload">
+
+                    <label for="favColor">Culoare favorită:</label>
+                    <input type="color" id="favColor" name="favColor">
+                </fieldset>
+
+                <button type="submit">Trimite mesajul</button>
+            </form>
+        </section> 
+
+        <section id="messages-section">
+            <h2>Mesaje Primite</h2>
+            <table border="1">
+                <caption>Listă detaliată a mesajelor primite de la utilizatori, grupate după expeditor</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nume</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mesaj</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Prioritate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">1</th>
+                        <td rowspan="2">Racz Otilia</td>
+                        <td rowspan="2"><a href="mailto:raczoti1978@email.com">raczoti1978@email.com</a></td>
+                        <td>Salut! Am o întrebare despre curs.</td>
+                        <td>2026-03-09</td>
+                        <td style="text-align: center;">
+                            <input type="checkbox" id="p1_1" name="priority">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Revin, am găsit soluția, mersi!</td>
+                        <td>2026-03-10</td>
+                       <td style="text-align: center;">
+                            <input type="checkbox" id="p1_2" name="priority">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Pusok Petra</td>
+                        <td><a href="mailto:petra.pusok@email.com">petra.pusok@email.com</a></td>
+                        <td>Pagina arată excelent!</td>
+                        <td>2026-03-12</td>
+                        <td style="text-align: center;">
+                            <input type="checkbox" id="p1_3" name="priority">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Total mesaje afișate: 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Racz Roberta. Laboratorul 9.</p>
+    </footer>
+
+    <script src="validation.js"></script>
+</body>
+</html>

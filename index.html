@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Pagină de curs</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Navigație principală">
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+            <li><a href="universities.html">Universități</a></li>
+          </ul>
+        </nav>
+        <h1>Pagina principală</h1>
+        <p>Învățăm lucruri de bază despre HTML</p>
+    </header>
+    <nav aria-label="navigare-principală">
+        <ul>
+            <li><a href="#">Surse</a></li>
+            <li><a href="#">Alte surse</a></li>
+        </ul>
+    </nav>
+    <main id="content-principal">
+        <section>
+            <h2>Despre mine</h2>
+            <p>Mă numesc Racz Roberta, sunt anul I la Facultatea de Informatică și vreau să învăț cât mai multe despre WD.</p>
+        </section>
+        <section>
+            <h2>Poză</h2>
+            <img src="imagini/logohtml.jpg" alt="logo HTML">
+        </section>
+      <div class="container-tabel">
+        <h2 class="table-title">Personal Skills</h2>
+        <table class="Personal">
+          <thead>
+            <tr>
+              <th scope="col" colspan="3">Personal Skills</th>
+            </tr>
+          </thead>
+          <tbody class="tab1">
+            <tr>
+              <th scope="row" rowspan="3">Programing</th>
+              <td>Python</td>
+              <td class="js-cell" style="color: green;">JavaScript</td>
+            </tr>
+
+            <tr>
+              <td>C/C++</td>
+              <td class="java-cell" style="color: rgb(176, 11, 11);">Java</td>
+            </tr>
+
+            <tr>
+              <td>Java</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <th scope="row" rowspan="4">Design</th>
+              <td colspan="2">Figma</td>
+            </tr>
+
+            <tr>
+             <td colspan="2">Adobe XD</td>
+            </tr>
+
+            <tr>
+             <td colspan="2">Photoshop</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">UI/UX</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Other</th>
+              <td colspan="2">Git</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <section id="portfolio-section">
+          <h2>Portofoliu Proiecte</h2>
+          <table border="1">
+                <caption>Tabel detaliat al proiectelor personale, incluzând tehnologiile folosite și nivelul de dificultate</caption>
+                <thead>
+                    <tr>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Technologies</th>
+                      <th scope="col">Difficulty</th>
+                      <th scope="col">Link</th>
+                      <th scope="col">ETC (Status)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Personal Website</th>
+                        <td>Un site de prezentare realizat în cadrul laboratoarelor EWD.</td>
+                        <td>
+                            <ul>
+                              <li>HTML5</li>
+                              <li>CSS3</li>
+                              <li>Git</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <select name="difficulty-1">
+                              <option value="low">Low</option>
+                              <option value="medium" selected>Medium</option>
+                              <option value="high">High</option>
+                            </select>
+                        </td>
+ 
+                        <td>
+                          <a href="https://github.com/utilizator/lab-3" target="_blank">Vezi Repo</a>
+                        </td>
+                        <td>În lucru</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Task Manager App</th>
+                        <td>Aplicație web pentru gestionarea task-urilor zilnice.</td>
+                        <td>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li>LocalStorage</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <select name="difficulty-2">
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high" selected>High</option>
+                            </select>
+                        </td>
+
+                        <td>
+                           <a href="#" target="_blank">Demo Live</a>
+                        </td>
+                        <td>Finalizat</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" style="font-style: italic;">
+                          Toate proiectele sunt open-source și disponibile pentru colaborare.
+                        </td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                      <th scope="row" colspan="5">Total Proiecte</th>
+                      <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Racz Roberta, Elemente de web design, semestrul 2</p>
+    </footer>
+</body>
+</html>

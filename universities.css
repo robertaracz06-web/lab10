@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    padding: 16px;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.status {
+    opacity: .8;
+    margin: 15px 0; 
+}
+
+input {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #334155;
+    background: #0b1220;
+    color: #e5e7eb;
+    margin-right: 10px;
+}
+
+.export-btn {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.export-btn:hover {
+    background: #1d4ed8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: #1e293b; 
+}
+
+th, td {
+    padding: .55rem;
+    border-bottom: 1px solid #334155; 
+    text-align: left;
+    vertical-align: top;
+}
+
+td a {
+    color: #a7f3d0;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline; 
+}
