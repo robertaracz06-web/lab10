@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const API_URL = "http://universities.hipolabs.com/search?country=Romania";
 const status = document.getElementById("status");
 const tbody = document.getElementById("tbody");
